@@ -1,0 +1,11 @@
+<ul>
+    {% for object in object_list %}
+    <li>{{object.writter}}</li>
+    <li>{{object.text}}</li>
+    <hr>
+
+    {%empty%}
+    <li>No post yet</li>
+
+    {% endfor %}
+</ul>
